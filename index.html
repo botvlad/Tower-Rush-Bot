@@ -8,28 +8,42 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
-  <div class="app-container">
-    <h1 class="title">TOWER RUSH</h1>
-
-    <!-- переключатель языка -->
-    <div class="lang-toggle">
-      <button id="lang-ru">RU</button>
-      <button id="lang-en" class="active">EN</button>
+  <!-- Splash screen -->
+  <div id="splash">
+    <div class="splash-logo">
+      <img src="icon-512.png" alt="Tower Rush">
+      <h1 class="splash-title">Tower Rush soft</h1>
+      <div class="loader">
+        <div></div><div></div><div></div>
+      </div>
     </div>
+  </div>
 
-    <!-- число сигнала -->
-    <div class="signal-circle">
-      <span id="signal-number">-</span>
+  <!-- App -->
+  <div id="app" class="hidden">
+    <div class="app-container">
+      <h1 class="title">TOWER RUSH</h1>
+
+      <!-- переключатель языка -->
+      <div class="lang-toggle">
+        <button id="lang-ru">RU</button>
+        <button id="lang-en" class="active">EN</button>
+      </div>
+
+      <!-- число сигнала -->
+      <div class="signal-circle">
+        <span id="signal-number">-</span>
+      </div>
+      <p id="signal-text">Press "GET SIGNAL"</p>
+
+      <!-- кнопка -->
+      <button id="signal-btn" class="signal-btn">GET SIGNAL</button>
+
+      <!-- подсказка -->
+      <p class="hint">
+        If you have already made more than x2.5 of the bet, take your winnings!
+      </p>
     </div>
-    <p id="signal-text">Press "GET SIGNAL"</p>
-
-    <!-- кнопка -->
-    <button id="signal-btn" class="signal-btn">GET SIGNAL</button>
-
-    <!-- подсказка -->
-    <p class="hint">
-      If you have already made more than x2.5 of the bet, take your winnings!
-    </p>
   </div>
 
   <script src="app.js"></script>

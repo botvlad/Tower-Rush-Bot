@@ -61,3 +61,17 @@ btnEn.addEventListener('click', () => {
   textEl.textContent = 'Press "GET SIGNAL"';
   signalBtn.textContent = "GET SIGNAL";
 });
+
+// splash screen hide
+window.addEventListener('load', () => {
+  const splash = document.getElementById('splash');
+  const app = document.getElementById('app');
+  
+  setTimeout(() => {
+    splash.style.opacity = 0;
+    setTimeout(() => {
+      splash.classList.add('hidden');
+      app.classList.remove('hidden');
+    }, 500);
+  }, 2500);
+});
