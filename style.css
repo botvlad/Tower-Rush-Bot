@@ -21,6 +21,7 @@ body {
   z-index: 9999;
   color: #fff;
   transition: opacity 0.5s ease;
+  pointer-events: auto;
 }
 
 .splash-logo img {
@@ -63,6 +64,7 @@ body {
 .app-container {
   text-align: center;
   padding: 20px;
+  max-width: 520px;
 }
 
 .title {
@@ -118,7 +120,7 @@ body {
 
 .signal-btn {
   padding: 14px 22px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 12px;
@@ -138,4 +140,18 @@ body {
   margin-top: 20px;
   font-size: 12px;
   color: #aaa;
+}
+
+/* Debug log */
+.debug-log {
+  margin-top: 14px;
+  padding: 10px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.04);
+  color: #cfefff;
+  font-size: 12px;
+  text-align: left;
+  max-height: 120px;
+  overflow: auto;
+  border-radius: 8px;
 }
